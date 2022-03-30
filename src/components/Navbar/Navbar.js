@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import {FaBars, FaTimes} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
   const [click, setClick] = useState(false)
@@ -12,16 +13,16 @@ export const Navbar = () => {
         <h1>De<span className='primary'>Fi</span></h1>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li>
-            <a href="/">Home</a>
+            <Link to={'/'}>Home</Link>
           </li>
           <li>
-            <a href="/">Featured</a>
+            <Link to={'/featured'}>Featured</Link>
           </li>
           <li>
-            <a href="/">Earn</a>
+            <Link to={'/'}>Earn</Link>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <Link to={'/'}>Contact</Link>
           </li>
         </ul>
           <div className='btn-group'>

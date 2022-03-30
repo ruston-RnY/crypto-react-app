@@ -4,8 +4,9 @@ import { API_URL } from './environment/Constant'
 
 import { Navbar } from './components/Navbar/Navbar';
 import { Footer } from './components/Footer/Footer';
-// import { Coin } from './pages/Coin';
-import Home from './pages/Home';
+import { Coin } from './pages/Coin/Coin';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home/Home';
 
 function App() {
   const [coins, setCoins] = useState([])
@@ -22,8 +23,10 @@ function App() {
   return (
     <div>
       <Navbar></Navbar>
-      <Home></Home>
-      {/* <Coin></Coin> */}
+        <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/featured' element={<Coin dataCoins={coins}/>}></Route>
+        </Routes>
       <Footer></Footer>
     </div>
   );
