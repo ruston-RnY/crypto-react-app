@@ -1,5 +1,6 @@
 import React from 'react'
 import './Coin.css'
+import { Link } from 'react-router-dom';
 import {CoinItem} from '../../components/CoinItem/CoinItem'
 import {FaCoins} from 'react-icons/fa'
 
@@ -8,7 +9,7 @@ export const Coin = (props) => {
     <div className='container coin-section'>
       <div className='navbar'>
           <FaCoins className='icon' />
-          <h1> Coin <span className='purple'>Search</span></h1>
+          <h2 className='head-text'>Monitor <span className='purple'>your favorite coin activity</span></h2>
       </div>
 
       <div>
@@ -24,7 +25,9 @@ export const Coin = (props) => {
         {
           props.dataCoins.map((coins) => {
             return(
-              <CoinItem coins={coins} key={coins.id}></CoinItem>
+              <Link to={`/coin/${coins.id}`} key={coins.id}>
+                <CoinItem coins={coins}></CoinItem>
+              </Link>
             )
           })
         }

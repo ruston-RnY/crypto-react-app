@@ -1,16 +1,25 @@
-.navbar {
+.coin-section {
+  padding-top: 4rem;
+}
+
+.coin-section .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
+}
+
+.coin-section .head-text {
+  margin-left: 1rem;
 }
 
 .icon {
   font-size: 2rem;
-  color: #6900ff;
+  color: var(--primary);
 }
 
 .purple {
-  color: #6900ff;
+  color: var(--secondary);
 }
 
 .container {

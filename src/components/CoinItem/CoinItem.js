@@ -1,7 +1,6 @@
 import React from 'react'
 
 export const CoinItem = (props) => {
-  console.log(props);
   return (
     <div className="coin-row">
       <p>{props.coins.market_cap_rank}</p>

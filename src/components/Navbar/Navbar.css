@@ -17,6 +17,10 @@
   padding: 1rem;
 }
 
+.header .navbar-logo {
+  font-size: 2.5rem;
+}
+
 .colors {
   color: var(--primary);
 }

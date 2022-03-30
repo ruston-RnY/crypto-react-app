@@ -7,6 +7,7 @@ import { Footer } from './components/Footer/Footer';
 import { Coin } from './pages/Coin/Coin';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
+import { CoinDetail } from './pages/CoinDetail/CoinDetail';
 
 function App() {
   const [coins, setCoins] = useState([])
@@ -25,7 +26,10 @@ function App() {
       <Navbar></Navbar>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
-          <Route path='/featured' element={<Coin dataCoins={coins}/>}></Route>
+          <Route path='/coin' element={<Coin dataCoins={coins}/>}></Route>
+          <Route path='/coin' element={<CoinDetail />}>
+            <Route path=':coinId' element={<CoinDetail />}></Route>
+          </Route>
         </Routes>
       <Footer></Footer>
     </div>

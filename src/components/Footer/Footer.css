@@ -16,6 +16,17 @@
   flex-direction: column;
 }
 
+.footer .text-footer {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.footer .addres-footer {
+  margin-top: 1rem;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .footer .bar {
   width: 30px;
   border-bottom: 4px solid var(--primary);
@@ -42,5 +53,16 @@
 
   .footer .col-1 {
     display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer .container {
+    grid-column-gap: 25px;
+  }
+
+  .footer .text-footer {
+    font-size: 20px;
+    margin-top: 2rem;
   }
 }

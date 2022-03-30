@@ -10,13 +10,13 @@ export const Navbar = () => {
   return (
     <div className='header'>
       <div className='container'>
-        <h1>De<span className='primary'>Fi</span></h1>
+        <h1 className='navbar-logo'>Indo<span className='primary'>crypto</span></h1>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li>
             <Link to={'/'}>Home</Link>
           </li>
           <li>
-            <Link to={'/featured'}>Featured</Link>
+            <Link to={'/coin'}>Featured</Link>
           </li>
           <li>
             <Link to={'/'}>Earn</Link>
@@ -26,7 +26,7 @@ export const Navbar = () => {
           </li>
         </ul>
           <div className='btn-group'>
-              <button className='btn'>Connect Wallet</button>
+              <button className='btn'>Signup</button>
           </div>
           <div className='hamburger' onClick={handleClick}>
             {click ? (<FaTimes size={20} style={{color: '#333'}}/>) : (<FaBars size={20} style={{color: '#333'}} />)}
