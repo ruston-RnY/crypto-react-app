@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Featured.css'
 import { FiArrowUpRight, FiArrowDown } from 'react-icons/fi'
-import { API_URL } from '../environment/Constant'
+import { API_URL } from '../../environment/Constant'
 import axios from 'axios'
 
 export const Featured = () => {

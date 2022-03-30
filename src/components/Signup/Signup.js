@@ -1,5 +1,5 @@
 import React from 'react'
-import Trade from '../assets/trade.png'
+import Trade from '../../assets/trade.png'
 import './Signup.css'
 
 export const Signup = () => {
