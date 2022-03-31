@@ -119,3 +119,13 @@ th {
     margin: 0.5rem 0;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .coin-container .content {
+    padding: 1rem;
+  }
+
+  .info .coin-heading img {
+    width: 100%;
+  }
+}
