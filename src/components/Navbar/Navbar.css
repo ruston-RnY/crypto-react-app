@@ -39,6 +39,11 @@
   color: #333;
 }
 
+.nav-menu .active {
+  color: var(--primary);
+  font-weight: bold;
+}
+
 .hamburger {
   display: none;
   cursor: pointer;

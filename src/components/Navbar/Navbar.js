@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -17,13 +17,22 @@ export const Navbar = () => {
         </h1>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
-            <Link to={"/"}>Home</Link>
+            {/* <Link to={"/"}>Home</Link> */}
+            <NavLink to="/" activeClassName="selected">
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to={"/coin"}>Featured</Link>
+            {/* <Link to={"/coin"}>Featured</Link> */}
+            <NavLink to="/coin" activeClassName="selected">
+              Featured
+            </NavLink>
           </li>
           <li>
-            <Link to={"/not-found"}>Earn</Link>
+            <NavLink to="/not-found" activeClassName="selected">
+              Earn
+            </NavLink>
+            {/* <Link to={"/not-found"}>Earn</Link> */}
           </li>
           <li>
             <Link to={"/not-found"}>About</Link>
