@@ -1,9 +1,9 @@
 .footer {
   /* background-color: var(--background); */
   background-color: #c9d2e7;
-  margin-top: 5rem;
-  padding: 5rem 0;
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  margin-top: 6rem;
+  padding: 2rem 0;
+  /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%); */
 }
 
 .footer .container {
@@ -46,6 +46,19 @@
 
 .footer h5 {
   margin-top: 2rem;
+}
+
+.footer .sosial {
+  line-height: 24px;
+}
+
+.footer .sosial a {
+  display: flex;
+  align-items: center;
+}
+
+.footer .sosial span {
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 940px) {

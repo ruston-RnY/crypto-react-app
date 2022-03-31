@@ -37,9 +37,10 @@ export const Navbar = () => {
           <li>
             <Link to={"/not-found"}>About</Link>
           </li>
+          <li><button className="btn btn-mobile">Signup</button></li>
         </ul>
         <div className="btn-group">
-          <button className="btn">Signup</button>
+          <button className="btn btn-header">Signup</button>
         </div>
         <div className="hamburger" onClick={handleClick}>
           {click ? (

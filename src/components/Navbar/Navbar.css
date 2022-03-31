@@ -39,6 +39,10 @@
   color: #333;
 }
 
+.nav-menu .btn-mobile {
+  display: none;
+}
+
 .nav-menu .active {
   color: var(--primary);
   font-weight: bold;
@@ -54,6 +58,10 @@
     display: flex;
   }
 
+  .header .btn-header {
+    display: none;
+  }
+
   .nav-menu {
     position: absolute;
     flex-direction: column;
@@ -66,6 +74,10 @@
     z-index: 2;
     background: #fff;
     border-left: 1px solid #eee;
+  }
+
+  .nav-menu .btn-mobile {
+    display: block;
   }
 
   .nav-menu.active {
