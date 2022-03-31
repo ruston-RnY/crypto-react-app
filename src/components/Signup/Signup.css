@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 576px) {
   .signup img {
-    width: 1rem;
+    width: 100%;
     margin-bottom: 1rem;
   }
 }
