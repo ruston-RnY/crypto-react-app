@@ -1,5 +1,7 @@
 .footer {
-  background-color: var(--background);
+  /* background-color: var(--background); */
+  background-color: #c9d2e7;
+  margin-top: 5rem;
   padding: 5rem 0;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }

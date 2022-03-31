@@ -1,0 +1,21 @@
+.not-found {
+  display: flex;
+  height: 80vh;
+}
+
+.not-found .not-found-content {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.not-found .not-found-content .head-text {
+  font-size: 2rem;
+}
+
+.not-found .not-found-content .not-found-text {
+  margin: 1rem 0;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
