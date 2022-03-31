@@ -11,7 +11,9 @@ export const Navbar = () => {
     <div className="header">
       <div className="container">
         <h1 className="navbar-logo">
-          Indo<span className="primary">crypto</span>
+          <Link to={"/"}>
+            Indo<span className="primary">crypto</span>
+          </Link>
         </h1>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
