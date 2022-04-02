@@ -7,6 +7,11 @@
   top: 0;
   left: 0;
   z-index: 10;
+  transition: .3s ease-in;
+}
+
+.header-bg{
+  background-color: rgb(201 210 231 / 90%);;
 }
 
 .header .container {

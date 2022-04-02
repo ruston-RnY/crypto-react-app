@@ -4,11 +4,27 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  // handle nav mobile
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
+
+  // close menu
+  const closeMenu = () => setClick(false)
+
+  // change nav bg color
+  const [color, setColor] = useState(false)
+  const changeBgColor = () => {
+    if(window.scrollY >= 90){
+      setColor(true)
+    }else {
+      setColor(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeBgColor)
 
   return (
-    <div className="header">
+    <div className={color ? 'header header-bg' : 'header'}>
       <div className="container">
         <h1 className="navbar-logo">
           <Link to={"/"}>
@@ -17,22 +33,19 @@ export const Navbar = () => {
         </h1>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
-            {/* <Link to={"/"}>Home</Link> */}
-            <NavLink to="/" activeClassName="selected">
+            <NavLink to="/" activeclassname="selected" onClick={closeMenu}>
               Home
             </NavLink>
           </li>
           <li>
-            {/* <Link to={"/coin"}>Featured</Link> */}
-            <NavLink to="/coin" activeClassName="selected">
+            <NavLink to="/coin" activeclassname="selected" onClick={closeMenu}>
               Featured
             </NavLink>
           </li>
           <li>
-            <NavLink to="/not-found" activeClassName="selected">
+            <NavLink to="/not-found" activeclassname="selected" onClick={closeMenu}>
               Earn
             </NavLink>
-            {/* <Link to={"/not-found"}>Earn</Link> */}
           </li>
           <li>
             <Link to={"/not-found"}>About</Link>

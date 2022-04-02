@@ -13,7 +13,6 @@ export const CoinDetail = () => {
     axios
       .get(API_URL + `coins/${params.coinId}`)
       .then((res) => {
-        console.log(res);
         setCoin(res.data);
       })
       .catch((error) => {
