@@ -73,4 +73,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 This section has moved here: [https://indocrypto-app.netlify.app/](https://indocrypto-app.netlify.app/)
 
-[My Image](./src/assets/indocrypto.jpg)
+[./src/assets/indocrypto.jpg](./src/assets/indocrypto.jpg)
